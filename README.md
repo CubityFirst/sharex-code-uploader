@@ -5,7 +5,7 @@ Small little webpage that takes a ShareX input and renders it with highlight.js.
 
 ![](https://i.imgur.com/AGTbBOE.gif)
 
-Inside of Task Settings/Advanced/Upload text there's an option to include your own HTML and one idea we were throwing around in the background was to have code syntax highlighting, so this little snippet uses [highlight.js](https://highlightjs.org/) to format code, also has the ability to swap between code themes (more of which you can find [here](https://github.com/highlightjs/highlight.js/tree/main/src/styles))
+Inside of Task Settings/Advanced/Upload text there's an option to include your own HTML and one idea we were throwing around in the background was to have code syntax highlighting, so this little snippet uses [highlight.js](https://highlightjs.org/) to format code, also has the ability to swap between code themes (more of which you can find [here](https://github.com/highlightjs/highlight.js/tree/main/src/styles) and demo [here](https://highlightjs.org/static/demo/))
 
 ![](https://i.imgur.com/vgUxyYj.png)
 
