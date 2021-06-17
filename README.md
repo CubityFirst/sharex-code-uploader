@@ -1,8 +1,9 @@
 # sharex-code-uploader
 
 Small little webpage that takes a ShareX input and renders it with highlight.js.
-
  This was made in around a day, and took way too much effort for it to work well.
+
+![](https://i.imgur.com/AGTbBOE.gif)
 
 Inside of Task Settings/Advanced/Upload text there's an option to include your own HTML and one idea we were throwing around in the background was to have code syntax highlighting, so this little snippet uses [highlight.js](https://highlightjs.org/) to format code, also has the ability to swap between code themes (more of which you can find [here](https://github.com/highlightjs/highlight.js/tree/main/src/styles))
 
