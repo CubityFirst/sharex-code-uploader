@@ -12,4 +12,4 @@ Inside of Task Settings/Advanced/Upload text there's an option to include your o
 This will only really work if you have your own upload location, such as [Amazon S3](https://getsharex.com/docs/amazon-s3), or [Google Cloud Storage](https://getsharex.com/docs/google-cloud-storage), since you need to be able to upload .html files.
 
 I've also attached a minimal version, which only does one style, with no style swapping.
-Default for both is Dracula, because I like how that one looks.
+Default for both is Dracula 🦇, because I like how that one looks.
