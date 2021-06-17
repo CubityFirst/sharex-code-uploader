@@ -1,4 +1,4 @@
-# sharex-code-uploader
+# ShareX Snippet Uploader
 
 Small little webpage that takes a ShareX input and renders it with highlight.js.
  This was made in around a day, and took way too much effort for it to work well.
