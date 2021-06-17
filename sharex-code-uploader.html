@@ -1,0 +1,33 @@
+<meta charset="utf-8"/>
+<head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/base16/dracula.min.css" data-link="">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+   <style>#swapButton {color:white; user-select: none; font-family: Roboto Mono;}</style>
+   <script type="module">
+      hljs.highlightAll();
+      const themes = ["base16/dracula","base16/darcula","agate","base16/solarized-dark"]
+      let pending = false;
+      let arrayPos = 0;
+      document.querySelector('#swapbutton').addEventListener('click', () => {
+      if (pending) return;
+      arrayPos = (arrayPos + 1) % themes.length;
+      pending = true;
+      const link = Object.assign(document.createElement('link'), {
+          rel: "stylesheet",
+          href: `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/${themes[arrayPos]}.min.css`
+      });
+      document.getElementById("swapButton").textContent = `Swap Themes - ${themes[arrayPos]}`;
+      link.addEventListener('load', () => {
+          document.querySelectorAll('link[data-link]').forEach(prev => prev.remove());
+          link.dataset.link = '';
+          pending = false;
+      });
+      document.head.append(link);
+      });
+   </script>
+</head>
+<body class="hljs">
+   <p1 id="swapButton">Swap Themes - base16/dracula</p1>
+   <pre><code>%input</code></pre>
+</body>
